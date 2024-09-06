@@ -33,10 +33,32 @@ function updateTime() {
   let currentTime = moment().format("h:mm:ss[<small>] A [</small>]");
   let currentTimeElement = document.querySelector("#currentLocationTime");
   currentTimeElement.innerHTML = currentTime;
+
+  let currentLocation = moment.tz.guess();
+  let currentLocationElement = document.querySelector("#currentLocationName");
+  currentLocationElement.innerHTML = currentLocation;
 }
 updateTime();
 setInterval(updateTime, 1000);
 
-let currentLocation = moment.tz.guess();
-let currentLocationElement = document.querySelector("#currentLocationName");
-currentLocationElement.innerHTML = currentLocation;
+function showSelectedCountry(event) {
+  let cityTimezone = event.target.value;
+  let cityName = cityTimezone.split("/")[1];
+  let selectedCityTime = moment().tz(cityTimezone);
+  let searchedCityElement = document.querySelector("#defaultCities");
+  searchedCityElement.innerHTML = `<div class="other-city">
+          <div>
+            <h2>${cityName}</h2>
+            <div class="date"> ${selectedCityTime.format(
+              "dddd, Do MMMM yy"
+            )}</div>
+          </div>
+
+          <div class="time">${selectedCityTime.format(
+            "h:mm:ss[<small>] A [</small>]"
+          )}</div>
+        </div>`;
+}
+
+let locationDropdown = document.querySelector("#locations");
+locationDropdown.addEventListener("change", showSelectedCountry);
