@@ -57,7 +57,8 @@ function showSelectedCountry(event) {
           <div class="time">${selectedCityTime.format(
             "h:mm:ss[<small>] A [</small>]"
           )}</div>
-        </div>`;
+        </div>
+        <a href="/"> Back to home </a>`;
 }
 
 let locationDropdown = document.querySelector("#locations");
