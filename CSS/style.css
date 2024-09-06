@@ -1,3 +1,12 @@
 body {
   background: paleturquoise;
 }
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
