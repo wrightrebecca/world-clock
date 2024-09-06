@@ -13,6 +13,7 @@
       <h1>World Clock</h1>
       <div class="header">
         <div>
+          <div class="miniHeader">Your local timezone:</div>
           <div class="current-location-name" id="currentLocationName">
             United Kingdom
           </div>
@@ -32,32 +33,33 @@
         <option value="rome">Rome, Italy</option>
         <option value="paris">Paris, France</option>
       </select>
+      <div id="defaultCities">
+        <div class="other-city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date" id="tokyoDate"></div>
+          </div>
 
-      <div class="other-city" id="tokyo">
-        <div>
-          <h2>Tokyo</h2>
-          <div class="date" id="tokyoDate">Friday 6th September 2024</div>
+          <div class="time" id="tokyoTime"><small>AM</small></div>
         </div>
+        <hr />
+        <div class="other-city" id="barcelona">
+          <div>
+            <h2>Barcelona</h2>
+            <div class="date" id="barcelonaDate"></div>
+          </div>
 
-        <div class="time" id="tokyoTime">10:45<small>AM</small></div>
-      </div>
-      <hr />
-      <div class="other-city" id="barcelona">
-        <div>
-          <h2>Barcelona</h2>
-          <div class="date" id="barcelonaDate">Friday 6th September 2024</div>
+          <div class="time" id="barcelonaTime"><small>AM</small></div>
         </div>
+        <hr />
+        <div class="other-city" id="chicago">
+          <div>
+            <h2>Chicago</h2>
+            <div class="date" id="chicagoDate"></div>
+          </div>
 
-        <div class="time" id="barcelonaTime">10:45<small>AM</small></div>
-      </div>
-      <hr />
-      <div class="other-city" id="chicago">
-        <div>
-          <h2>Chicago</h2>
-          <div class="date" id="chicagoDate">Friday 6th September 2024</div>
+          <div class="time" id="chicagoTime"><small>AM</small></div>
         </div>
-
-        <div class="time" id="chicagoTime">10:45<small>AM</small></div>
       </div>
       <hr />
     </div>
