@@ -1,12 +1,84 @@
 body {
-  background: paleturquoise;
+  background: #c8d2bf;
+  font-family: monospace;
+}
+
+.container {
+  background: whitesmoke;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 40px 30px 40px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 h1 {
   text-align: center;
+  font-size: 44px;
+  margin-top: 20px;
+}
+.header {
+  background-color: #c8d2bf;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+  max-width: 700px;
+  border-radius: 8px;
+  color: black;
+  font-family: monospace;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.current-location-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.current-location-date {
+  opacity: 0.6;
+}
+.current-location-time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  color: black;
+  font-family: monospace;
+}
+
+.other-city {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 25px;
+}
+.date {
+  opacity: 0.6;
+}
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+small {
+  font-size: 18px;
+  opacity: 0.6;
 }
 
 footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
+  margin: 15px;
+  opacity: 0.6;
 }

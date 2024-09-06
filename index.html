@@ -12,14 +12,15 @@
     <div class="container">
       <h1>World Clock</h1>
       <div class="header">
-        <div class="current-location">Current Location</div>
-        <div class="current-location-name">London</div>
-        <div class="current-location-date">Friday 6th September 2024</div>
-        <div class="current-location-time">10:45am</div>
+        <div>
+          <div class="current-location-name">United Kingdom</div>
+          <div class="current-location-date">Friday 6th September 2024</div>
+        </div>
+        <div class="current-location-time">10:45<small>AM</small></div>
       </div>
 
       <select id="locations">
-        <option value="">Select a location</option>
+        <option value="">Select a different location</option>
         <option value="athens">Athens, Greece</option>
         <option value="instanbul">Istanbul, Turkey</option>
         <option value="rome">Rome, Italy</option>
@@ -27,20 +28,38 @@
       </select>
 
       <div class="other-city">
-        <h2>Tokyo</h2>
-        <div class="date">Friday 6th September 2024</div>
-        <div class="time">10:45am</div>
-      </div>
+        <div>
+          <h2>Tokyo</h2>
+          <div class="date">Friday 6th September 2024</div>
+        </div>
 
-      <div class="other-city">
-        <h2>Berlin</h2>
-        <div class="date">Friday 6th September 2024</div>
-        <div class="time">10:45am</div>
+        <div class="time">10:45<small>AM</small></div>
       </div>
+      <hr />
+      <div class="other-city">
+        <div>
+          <h2>Barcelona</h2>
+          <div class="date">Friday 6th September 2024</div>
+        </div>
+
+        <div class="time">10:45<small>AM</small></div>
+      </div>
+      <hr />
+      <div class="other-city">
+        <div>
+          <h2>San Francisco</h2>
+          <div class="date">Friday 6th September 2024</div>
+        </div>
+
+        <div class="time">10:45<small>AM</small></div>
+      </div>
+      <hr />
     </div>
-    <br />
     <footer>
-      This page was coded by Rebecca Wright. It is available on
+      This page was coded by
+      <a href="https://github.com/wrightrebecca" target="_blank"
+        >Rebecca Wright</a
+      >. It is available on
       <a href="https://github.com/wrightrebecca/world-clock" target="_blank"
         >GitHub</a
       >
@@ -49,9 +68,10 @@
         href="https://app.netlify.com/sites/your-worldwide-clock/overview"
         target="_blank"
       >
-        Netlify.</a
-      >
+        Netlify</a
+      >.
     </footer>
+
     <script src="JS/script.js"></script>
   </body>
 </html>
